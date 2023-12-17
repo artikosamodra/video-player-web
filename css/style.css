@@ -1,3 +1,7 @@
 :root{
-    --primary: rgb()
+    --primary: rgb(255, 26, 26);
+}
+
+.col-primary{
+    background-color: var(--primary);
 }
