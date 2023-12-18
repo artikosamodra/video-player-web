@@ -1,7 +1,29 @@
-:root{
-    --primary: rgb(255, 26, 26);
+:root {
+  --primary: rgb(255, 26, 26);
 }
 
-.col-primary{
-    background-color: var(--primary);
+.col-primary {
+  background-color: var(--primary);
 }
+
+.scroll {
+  /* margin-top: 5rem; */
+  width: 100%;
+  aspect-ratio: 4/9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding-bottom: 20px;
+  padding: 5%;
+}
+
+.scroll-text {
+    /* margin-top: 5rem; */
+    width: 100%;
+    aspect-ratio: 5/2;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-padding-bottom: 20px;
+    padding: 5%;
+  }

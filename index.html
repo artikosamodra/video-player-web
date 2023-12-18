@@ -49,18 +49,17 @@
     <!-- HERO SECTION -->
     <section class="hero mt-5" id="hero">
       <div class="row">
+        <!-- Thumbnail Area -->
         <div class="col-lg-3 px-4">
           <p class="mb-3 px-4">List Video</p>
-          <div
-            data-bs-spy="scroll"
-            data-bs-target="#list-example"
-            data-bs-offset="0"
-            class="scrollspy-example"
-            tabindex="0"
-          >
-            <!-- <p id="list-item-1">Item 1</p> -->
+          <div class="scroll">
             <div class="video-area mb-3">
-              <button class="btn" onclick="" id="">
+              <button
+                class="btn"
+                onclick="btnVid(this)"
+                id="btnV1"
+                video-src="assets/vid/beach.mp4"
+              >
                 <video
                   src="assets/vid/beach.mp4"
                   class="img-thumbnail"
@@ -69,7 +68,12 @@
               </button>
             </div>
             <div class="video-area mb-3">
-              <button class="btn" onclick="" id="">
+              <button
+                class="btn"
+                onclick="btnVid(this)"
+                id="btnV2"
+                video-src="assets/vid/forest.mp4"
+              >
                 <video
                   src="assets/vid/forest.mp4"
                   class="img-thumbnail"
@@ -78,7 +82,12 @@
               </button>
             </div>
             <div class="video-area mb-3">
-              <button class="btn" onclick="" id="">
+              <button
+                class="btn"
+                onclick="btnVid(this)"
+                id="btnV3"
+                video-src="assets/vid/harbour.mp4"
+              >
                 <video
                   src="assets/vid/harbour.mp4"
                   class="img-thumbnail"
@@ -87,7 +96,12 @@
               </button>
             </div>
             <div class="video-area mb-3">
-              <button class="btn" onclick="" id="">
+              <button
+                class="btn"
+                onclick="btnVid(this)"
+                id="btnV4"
+                video-src="assets/vid/sea.mp4"
+              >
                 <video
                   src="assets/vid/sea.mp4"
                   class="img-thumbnail"
@@ -96,7 +110,12 @@
               </button>
             </div>
             <div class="video-area mb-3">
-              <button class="btn" onclick="" id="">
+              <button
+                class="btn"
+                onclick="btnVid(this)"
+                id="btnV5"
+                video-src="assets/vid/town.mp4"
+              >
                 <video
                   src="assets/vid/town.mp4"
                   class="img-thumbnail"
@@ -106,14 +125,34 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-9 px-4">
+
+        <!-- Video Player Area -->
+        <div class="col-lg-6 px-4">
           <p class="mb-3 px-4">Play Area</p>
-          <video
-            width="80%"
-            class="p-2 border"
-            controls
-            src="assets/vid/beach.mp4"
-          ></video>
+          <video width="100%" controls autoplay id="playerVid">
+            <source
+              src="assets/vid/welcome.mp4"
+              type="video/mp4"
+              id="playerSrc"
+            />
+          </video>
+          <!-- Descript Video Area -->
+          <p class="my-3 px-4">Descript - Text Area</p>
+          <div class="scroll-text">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Veritatis corrupti ratione commodi ex voluptatum quod repellat
+              mollitia a qui maiores sunt sed ut illo dolorum, suscipit tempora
+              nulla! Nihil nam consequuntur voluptatibus error, est veniam saepe
+              repellat laboriosam, consequatur ipsam delectus similique pariatur
+              aliquid numquam aperiam necessitatibus sequi? Tempore, facere.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ads Area -->
+        <div class="col-lg-3 px-4">
+          <p class="md-3">Ads Area</p>
         </div>
       </div>
     </section>
@@ -127,5 +166,7 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
