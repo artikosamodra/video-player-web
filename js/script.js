@@ -32,11 +32,12 @@ function searchBtn() {
   let videoButtons = document.querySelectorAll(".video-area button");
 
   videoButtons.forEach((button) => {
-    var title = button.getAttribute("data-title").toUpperCase();
-    var videoArea = button.parentElement;
+    let title = button.getAttribute("data-title").toUpperCase();
+    let videoArea = button.parentElement;
 
+    // Menyembunyikan atau menampilkan video-area berdasarkan pencarian
     if (title.includes(searchTerm)) {
-      videoArea.style.display = "inline-block";
+      videoArea.style.display = "block";
     } else {
       videoArea.style.display = "none";
     }
