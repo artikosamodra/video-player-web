@@ -1,32 +1,44 @@
 let vDesc = {
-    'btnV1': "BEACH. This Text Descript Area",
-    'btnV2': "FOREST. This Text Descript Area",
-    'btnV3': "HARBOUR. This Text Descript Area",
-    'btnV4': "SEA. This Text Descript Area",
-    'btnV5': "TOWN. This Text Descript Area"
-  }; 
+  btnV1: "BEACH. This Text Descript Area",
+  btnV2: "FOREST. This Text Descript Area",
+  btnV3: "HARBOUR. This Text Descript Area",
+  btnV4: "SEA. This Text Descript Area",
+  btnV5: "TOWN. This Text Descript Area",
+};
 
+function btnVid(button) {
+  let playerVid = document.getElementById("playerVid");
+  let textDesc = document.getElementById("textDesc");
 
+  //Selector to PlayerVid.source
+  let source = playerVid.querySelector("source");
 
-function btnVid(button){
-    let playerVid = document.getElementById('playerVid');
-    let textDesc = document.getElementById('textDesc');
+  //get attribute video-src from button.
+  let videoSrc = button.getAttribute("video-src");
+  let textSrc = button.getAttribute("id");
 
-    //Selector to PlayerVid.source
-    let source = playerVid.querySelector('source');
+  //add or change source.src value >> video-src value at videoSrc >
+  source.src = videoSrc;
+  textDesc.textContent = vDesc[textSrc];
 
+  playerVid.load();
+  playerVid.play();
 
-    //get attribute video-src from button.
-    let videoSrc = button.getAttribute('video-src');
-    let textSrc = button.getAttribute('id');
+  // console.log(videoSrc);
+}
 
-    //add or change source.src value >> video-src value at videoSrc >
-    source.src = videoSrc;
-    textDesc.textContent = vDesc[textSrc];
+function searchBtn() {
+  let searchTerm = document.getElementById("searchInput").value.toUpperCase();
+  let videoButtons = document.querySelectorAll(".video-area button");
 
-    playerVid.load();
-    playerVid.play();
+  videoButtons.forEach((button) => {
+    var title = button.getAttribute("data-title").toUpperCase();
+    var videoArea = button.parentElement;
 
-    console.log(videoSrc);
-
+    if (title.includes(searchTerm)) {
+      videoArea.style.display = "inline-block";
+    } else {
+      videoArea.style.display = "none";
+    }
+  });
 }

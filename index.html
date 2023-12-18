@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video Player</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://unpkg.com/feather-icons"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,100;1,200;1,600;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Video Player</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="https://unpkg.com/feather-icons"></script>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,100;1,200;1,600;1,700;1,900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous"
+        />
+      </head>
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-light col-primary px-1 px-lg-5">
@@ -29,8 +29,9 @@
             placeholder="Search"
             aria-label="Search"
             style="width: 25rem;"
+            id="searchInput"
           />
-          <button class="btn btn-light btn-outline-dark" type="submit">
+          <button class="btn btn-light btn-outline-dark" type="submit" onclick="searchBtn()">
             Search
           </button>
         </form>
@@ -59,6 +60,7 @@
                 onclick="btnVid(this)"
                 id="btnV1"
                 video-src="assets/vid/beach.mp4"
+                data-title="BEACH"
               >
                 <video
                   src="assets/vid/beach.mp4"
@@ -66,6 +68,7 @@
                   id="vid1"
                 ></video>
               </button>
+              <p class="mb-3 px-4">BEACH</p>
             </div>
             <div class="video-area mb-3">
               <button
@@ -73,6 +76,7 @@
                 onclick="btnVid(this)"
                 id="btnV2"
                 video-src="assets/vid/forest.mp4"
+                data-title="FOREST"
               >
                 <video
                   src="assets/vid/forest.mp4"
@@ -80,6 +84,7 @@
                   id="vid2"
                 ></video>
               </button>
+              <p class="mb-3 px-4">FOREST</p>
             </div>
             <div class="video-area mb-3">
               <button
@@ -87,6 +92,7 @@
                 onclick="btnVid(this)"
                 id="btnV3"
                 video-src="assets/vid/harbour.mp4"
+                data-title="HARBOUR"
               >
                 <video
                   src="assets/vid/harbour.mp4"
@@ -94,13 +100,16 @@
                   id="vid3"
                 ></video>
               </button>
+              <p class="mb-3 px-4">HARBOUR</p>
             </div>
             <div class="video-area mb-3">
+                
               <button
                 class="btn"
                 onclick="btnVid(this)"
                 id="btnV4"
                 video-src="assets/vid/sea.mp4"
+                data-title="SEA"
               >
                 <video
                   src="assets/vid/sea.mp4"
@@ -108,6 +117,7 @@
                   id="vid4"
                 ></video>
               </button>
+              <!-- <p class="mb-3 px-4">SEA</p> -->
             </div>
             <div class="video-area mb-3">
               <button
@@ -115,6 +125,7 @@
                 onclick="btnVid(this)"
                 id="btnV5"
                 video-src="assets/vid/town.mp4"
+                data-title="TOWN"
               >
                 <video
                   src="assets/vid/town.mp4"
@@ -122,6 +133,7 @@
                   id="vid5"
                 ></video>
               </button>
+              <p class="mb-3 px-4">TOWN</p>
             </div>
           </div>
         </div>
@@ -153,14 +165,14 @@
 
     <!-- JavaScript -->
     <script>
-      feather.replace();
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="js/script.js"></script>
+        feather.replace();
+      </script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+      ></script>
+  
+      <script src="js/script.js"></script>
   </body>
 </html>
