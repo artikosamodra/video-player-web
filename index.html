@@ -20,27 +20,36 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-light col-primary px-1 px-lg-5">
       <div class="container-fluid">
-        <a class="navbar-brand text-white fw-bold fs-3">ArtTube</a>
-        <form class="d-flex" onsubmit="searchBtn(); return false;">
+        <a
+          class="navbar-brand text-white fw-bold fs-3 col-12 col-lg-2 d-flex justify-content-center"
+          >ArtTube</a
+        >
+        <form
+          class="d-flex col-9 col-md-8 col-lg-7"
+          onsubmit="searchBtn(); return false;"
+        >
           <input
             class="form-control me-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
-            style="width: 25rem;"
+            style="width: 100%;"
             id="searchInput"
           />
           <button class="btn btn-light btn-outline-dark" type="submit">
             Search
           </button>
         </form>
-        <a class="navbar-brand" href="https://github.com/artikosamodra">
+        <a
+          class="navbar-brand col-1 col-md-1"
+          href="https://github.com/artikosamodra"
+        >
           <img
             src="./assets/img/profil-pic.jpg"
             alt="Profil-Pic"
             width="40"
             height="40"
-            class="d-inline-block align-text-top rounded-circle border border-3"
+            class="d-block align-text-top rounded-circle border border-3"
           />
         </a>
       </div>
