@@ -2,6 +2,15 @@
   --primary: rgb(255, 26, 26);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
 .col-primary {
   background-color: var(--primary);
 }
@@ -20,7 +29,6 @@
 }
 
 .scroll-text {
-  /* margin-top: 5rem; */
   width: 100%;
   aspect-ratio: 9/2;
   overflow-x: hidden;
