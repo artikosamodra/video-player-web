@@ -18,14 +18,14 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-light col-primary px-1 px-lg-5">
+    <nav class="navbar sticky-top navbar-light col-primary px-1 px-lg-5">
       <div class="container-fluid">
         <a
           class="navbar-brand text-white fw-bold fs-3 col-12 col-lg-2 d-flex justify-content-center"
           >ArtTube</a
         >
         <form
-          class="d-flex col-9 col-md-8 col-lg-7"
+          class="d-flex col-10 col-lg-7"
           onsubmit="searchBtn(); return false;"
         >
           <input
@@ -56,94 +56,106 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="hero mt-5" id="hero">
+    <section class="hero mt-3" id="hero">
       <div class="row">
         <!-- Thumbnail Area -->
-        <div class="col-lg-3 px-4">
-          <p class="mb-3 px-4">List Video</p>
-          <div class="scroll" id="videoContainer">
-            <div class="video-area mb-3">
-              <button
-                class="btn"
-                onclick="btnVid(this)"
-                id="btnV1"
-                video-src="assets/vid/beach.mp4"
-                data-title="BEACH"
-              >
-                <video
-                  src="assets/vid/beach.mp4"
-                  class="img-thumbnail"
-                  id="vid1"
-                ></video>
-              </button>
-            </div>
-            <div class="video-area mb-3">
-              <button
-                class="btn"
-                onclick="btnVid(this)"
-                id="btnV2"
-                video-src="assets/vid/forest.mp4"
-                data-title="FOREST"
-              >
-                <video
-                  src="assets/vid/forest.mp4"
-                  class="img-thumbnail"
-                  id="vid2"
-                ></video>
-              </button>
-            </div>
-            <div class="video-area mb-3">
-              <button
-                class="btn"
-                onclick="btnVid(this)"
-                id="btnV3"
-                video-src="assets/vid/harbour.mp4"
-                data-title="HARBOUR"
-              >
-                <video
-                  src="assets/vid/harbour.mp4"
-                  class="img-thumbnail"
-                  id="vid3"
-                ></video>
-              </button>
-            </div>
-            <div class="video-area mb-3">
-              <button
-                class="btn"
-                onclick="btnVid(this)"
-                id="btnV4"
-                video-src="assets/vid/sea.mp4"
-                data-title="SEA"
-              >
-                <video
-                  src="assets/vid/sea.mp4"
-                  class="img-thumbnail"
-                  id="vid4"
-                ></video>
-              </button>
-            </div>
-            <div class="video-area mb-3">
-              <button
-                class="btn"
-                onclick="btnVid(this)"
-                id="btnV5"
-                video-src="assets/vid/town.mp4"
-                data-title="TOWN"
-              >
-                <video
-                  src="assets/vid/town.mp4"
-                  class="img-thumbnail"
-                  id="vid5"
-                ></video>
-              </button>
+        <div class="col-12 col-lg-3 px-4 mb-5 mb-lg-0">
+          <p class="mb-3">List Video</p>
+          <div class="scroll col-12" id="videoContainer">
+            <div class="flex-set">
+              <div class="video-area mb-1 col-5 col-md-4 col-lg-12">
+                <button
+                  name="beach"
+                  class="btn"
+                  onclick="btnVid(this)"
+                  id="btnV1"
+                  video-src="assets/vid/beach.mp4"
+                  data-title="BEACH"
+                >
+                  <video
+                    src="assets/vid/beach.mp4"
+                    class="img-thumbnail"
+                    id="vid1"
+                  ></video>
+                  <label for="beach">Title: Beach</label>
+                </button>
+              </div>
+              <div class="video-area mb-3 col-5 col-md-4 col-lg-12">
+                <button
+                  name="forest"
+                  class="btn"
+                  onclick="btnVid(this)"
+                  id="btnV2"
+                  video-src="assets/vid/forest.mp4"
+                  data-title="FOREST"
+                >
+                  <video
+                    src="assets/vid/forest.mp4"
+                    class="img-thumbnail"
+                    id="vid2"
+                  ></video>
+                  <label for="forest">Title: Forest</label>
+                </button>
+              </div>
+              <div class="video-area mb-3 col-5 col-md-4 col-lg-12">
+                <button
+                  name="harbour"
+                  class="btn"
+                  onclick="btnVid(this)"
+                  id="btnV3"
+                  video-src="assets/vid/harbour.mp4"
+                  data-title="HARBOUR"
+                >
+                  <video
+                    src="assets/vid/harbour.mp4"
+                    class="img-thumbnail"
+                    id="vid3"
+                  ></video>
+                  <label for="harbour">Title: Harbour</label>
+                </button>
+              </div>
+              <div class="video-area mb-3 col-5 col-md-4 col-lg-12">
+                <button
+                  name="sea"
+                  class="btn"
+                  onclick="btnVid(this)"
+                  id="btnV4"
+                  video-src="assets/vid/sea.mp4"
+                  data-title="SEA"
+                >
+                  <video
+                    src="assets/vid/sea.mp4"
+                    class="img-thumbnail"
+                    id="vid4"
+                  ></video>
+                  <label for="sea">Title: Sea</label>
+                </button>
+              </div>
+              <div class="video-area mb-3 col-5 col-md-4 col-lg-12">
+                <button
+                  name="town"
+                  class="btn"
+                  onclick="btnVid(this)"
+                  id="btnV5"
+                  video-src="assets/vid/town.mp4"
+                  data-title="TOWN"
+                >
+                  <video
+                    src="assets/vid/town.mp4"
+                    class="img-thumbnail"
+                    id="vid5"
+                  ></video>
+                  <label for="town">Title: Town</label>
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Video Player Area -->
-        <div class="col-lg-6 px-4">
-          <p class="mb-3 px-4">Play Area</p>
-          <video width="100%" controls id="playerVid">
+        <div class="col-12 col-lg-6 px-4">
+          <p class="mb-3">Play Area</p>
+          <video class="video-h" controls id="playerVid">
             <source
               src="assets/vid/welcome.mp4"
               type="video/mp4"
@@ -151,15 +163,16 @@
             />
           </video>
           <!-- Descript Video Area -->
-          <p class="my-3 px-4">Descript - Text Area</p>
+          <h1 class="my-4 my-lg-2 fs-5" id="textTitle"></h1>
           <div class="scroll-text">
             <div class="" id="textDesc"></div>
           </div>
         </div>
 
-        <!-- Ads Area -->
+        <!-- Free Area -->
         <div class="col-lg-3 px-4">
-          <p class="md-3">Ads Area</p>
+          <p class="mt-3">Free Area</p>
+          <div class="free-area"></div>
         </div>
       </div>
     </section>

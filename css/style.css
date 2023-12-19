@@ -7,23 +7,74 @@
 }
 
 .scroll {
-  /* margin-top: 5rem; */
   width: 100%;
-  aspect-ratio: 4/9;
+  aspect-ratio: 8/15;
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-padding-bottom: 20px;
-  padding: 5%;
+}
+
+.flex-set {
+  display: block;
 }
 
 .scroll-text {
-    /* margin-top: 5rem; */
-    width: 100%;
-    aspect-ratio: 5/2;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-padding-bottom: 20px;
-    padding: 5%;
+  /* margin-top: 5rem; */
+  width: 100%;
+  aspect-ratio: 9/2;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding-bottom: 20px;
+  display: none;
+}
+
+.video-h {
+  max-height: 400px;
+  max-width: 100%;
+}
+
+.free-area {
+  height: 30vh;
+  background-color: red;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
   }
+
+  .scroll {
+    width: 50%;
+    aspect-ratio: 16/5;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-padding-bottom: 20px;
+  }
+
+  .flex-set {
+    display: flex;
+  }
+
+  .scroll-text {
+    aspect-ratio: 3/1;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 426px) {
+  html {
+    font-size: 80%;
+  }
+
+  .scroll {
+    aspect-ratio: 13/5;
+  }
+
+  .scroll-text {
+    aspect-ratio: 2/1;
+  }
+}
