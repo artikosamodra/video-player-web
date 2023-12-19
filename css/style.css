@@ -41,7 +41,7 @@
 }
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   html {
     font-size: 90%;
   }
