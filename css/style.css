@@ -1,5 +1,5 @@
 :root {
-  --primary: rgb(76, 59, 59);
+  --primary: rgb(97, 75, 75);
 }
 
 * {
@@ -14,6 +14,15 @@
 .col-primary {
   background-color: var(--primary);
 }
+
+.col-red{
+  color: rgb(249, 39, 39);
+}
+
+.bg-logo{
+  text-shadow: 1px 1px 50px rgb(231, 45, 185);
+}
+
 
 .scroll {
   width: 100%;
@@ -38,9 +47,10 @@
   display: none;
 }
 
-.video-box {
+.video-box{
   display: flex;
   justify-content: center;
+
 }
 
 .video-h {
