@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,7 +22,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="">
     <!-- NAVBAR -->
     <nav class="navbar sticky-top navbar-light col-primary px-1 px-lg-5">
       <div class="container-fluid">
@@ -68,7 +67,7 @@
       <div class="row mt-3">
         <!-- Thumbnail Area -->
         <div class="col-12 col-lg-3 px-4 mb-5 mb-lg-0">
-          <p class="mb-3">List Video</p>
+          <p class="mb-3 fw-bold">List Video</p>
           <div class="scroll col-12" id="videoContainer">
             <div class="flex-set">
               <div class="video-area mb-1 col-5 col-md-4 col-lg-12">
@@ -84,7 +83,7 @@
                     class="img-thumbnail"
                     id="vid1"
                   ></video>
-                  <p>Title: Beach</p>
+                  <p class="fw-bold">Title: Beach</p>
                   <p></p>
                 </button>
               </div>
@@ -101,7 +100,7 @@
                     class="img-thumbnail"
                     id="vid2"
                   ></video>
-                  <p>Title: Forest</p>
+                  <p class="fw-bold">Title: Forest</p>
                   <p></p>
                 </button>
               </div>
@@ -118,7 +117,7 @@
                     class="img-thumbnail"
                     id="vid3"
                   ></video>
-                  <p>Title: Harbour</p>
+                  <p class="fw-bold">Title: Harbour</p>
                   <p></p>
                 </button>
               </div>
@@ -135,7 +134,7 @@
                     class="img-thumbnail"
                     id="vid4"
                   ></video>
-                  <p>Title: Sea</p>
+                  <p class="fw-bold">Title: Sea</p>
                   <p></p>
                 </button>
               </div>
@@ -152,7 +151,7 @@
                     class="img-thumbnail"
                     id="vid5"
                   ></video>
-                  <p>Title: Town</p>
+                  <p class="fw-bold">Title: Town</p>
                   <p></p>
                 </button>
               </div>
@@ -162,207 +161,7 @@
 
         <!-- Video Player Area -->
         <div class="col-12 col-lg-6 px-4">
-          <p class="mb-3">Play Area</p>
-          <div class="video-box">
-<video class="video-h" controls id="playerVid">
-            <source
-              src="assets/vid/welcome.mp4"
-              type="video/mp4"
-              id="playerSrc"
-            />
-          </video>
-          </div>
-          <!-- Descript Video Area -->
-          <h1 class="my-4 my-lg-2 fs-5" id="textTitle"></h1>
-          <div class="scroll-text">
-            <div class="" id="textDesc"></div>
-          </div>
-        </div>
-
-        <!-- Free Area -->
-        <div class="col-lg-3 px-4">
-          <p class="mt-3 mt-lg-0">Free Area</p>
-          <div class="free-area"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- JavaScript -->
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="js/script.js"></script>
-  </body>
-</html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video Player</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,100;1,200;1,600;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Boostrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar sticky-top navbar-light col-primary px-1 px-lg-5">
-      <div class="container-fluid">
-        <a
-          href="https://github.com/artikosamodra/VIdeoPlayer-Web"
-          class="navbar-brand text-white fw-bold fs-3 col-12 col-lg-2 d-flex justify-content-center"
-          >ArtTube</a
-        >
-        <form
-          class="d-flex col-10 col-lg-7"
-          onsubmit="searchBtn(); return false;"
-        >
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-            style="width: 100%;"
-            id="searchInput"
-          />
-          <button class="btn btn-light btn-outline-dark" type="submit">
-            Search
-          </button>
-        </form>
-        <a
-          class="navbar-brand col-1 col-md-1"
-          href="https://github.com/artikosamodra"
-        >
-          <img
-            src="./assets/img/profil-pic.jpg"
-            alt="Profil-Pic"
-            width="40"
-            height="40"
-            class="d-block align-text-top rounded-circle border border-3"
-          />
-        </a>
-      </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <section class="hero container-fluid" id="hero">
-      <div class="row mt-3">
-        <!-- Thumbnail Area -->
-        <div class="col-12 col-lg-3 px-4 mb-5 mb-lg-0">
-          <p class="mb-3">List Video</p>
-          <div class="scroll col-12" id="videoContainer">
-            <div class="flex-set">
-              <div class="video-area mb-1 col-5 col-md-4 col-lg-12">
-                <button
-                  class="btn"
-                  onclick="btnVid(this)"
-                  id="btnV1"
-                  video-src="assets/vid/beach.mp4"
-                  data-title="BEACH"
-                >
-                  <video
-                    src="assets/vid/beach.mp4"
-                    class="img-thumbnail"
-                    id="vid1"
-                  ></video>
-                  <p>Title: Beach</p>
-                  <p></p>
-                </button>
-              </div>
-              <div class="video-area mb-3 col-5 col-md-4 col-lg-12">
-                <button
-                  class="btn"
-                  onclick="btnVid(this)"
-                  id="btnV2"
-                  video-src="assets/vid/forest.mp4"
-                  data-title="FOREST"
-                >
-                  <video
-                    src="assets/vid/forest.mp4"
-                    class="img-thumbnail"
-                    id="vid2"
-                  ></video>
-                  <p>Title: Forest</p>
-                  <p></p>
-                </button>
-              </div>
-              <div class="video-area mb-3 col-5 col-md-4 col-lg-12">
-                <button
-                  class="btn"
-                  onclick="btnVid(this)"
-                  id="btnV3"
-                  video-src="assets/vid/harbour.mp4"
-                  data-title="HARBOUR"
-                >
-                  <video
-                    src="assets/vid/harbour.mp4"
-                    class="img-thumbnail"
-                    id="vid3"
-                  ></video>
-                  <p>Title: Harbour</p>
-                  <p></p>
-                </button>
-              </div>
-              <div class="video-area mb-3 col-5 col-md-4 col-lg-12">
-                <button
-                  class="btn"
-                  onclick="btnVid(this)"
-                  id="btnV4"
-                  video-src="assets/vid/sea.mp4"
-                  data-title="SEA"
-                >
-                  <video
-                    src="assets/vid/sea.mp4"
-                    class="img-thumbnail"
-                    id="vid4"
-                  ></video>
-                  <p>Title: Sea</p>
-                  <p></p>
-                </button>
-              </div>
-              <div class="video-area mb-3 col-5 col-md-4 col-lg-12">
-                <button
-                  class="btn"
-                  onclick="btnVid(this)"
-                  id="btnV5"
-                  video-src="assets/vid/town.mp4"
-                  data-title="TOWN"
-                >
-                  <video
-                    src="assets/vid/town.mp4"
-                    class="img-thumbnail"
-                    id="vid5"
-                  ></video>
-                  <p>Title: Town</p>
-                  <p></p>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Video Player Area -->
-        <div class="col-12 col-lg-6 px-4">
-          <p class="mb-3">Play Area</p>
+          <p class="mb-3 fw-bold">Play Area</p>
           <video class="video-h" controls id="playerVid">
             <source
               src="assets/vid/welcome.mp4"
@@ -379,14 +178,43 @@
 
         <!-- Free Area -->
         <div class="col-lg-3 px-4">
-          <p class="mt-3 mt-lg-0">Free Area</p>
-          <div class="free-area">
-            <button class="btn border border-3 rounded-circle mx-3 p-5 bg-danger" onclick="" ></button>
-            <button class="btn border border-3 rounded-circle mx-3 p-5 bg-warning" onclick=""></button>
-            <button class="btn border border-3 rounded-circle mx-3 p-5 bg-primary" onclick=""></button>
-            <button class="btn border border-3 rounded-circle mx-3 p-5 bg-dark" onclick=""></button>
-            <button class="btn border border-3 rounded-circle mx-3 p-5 bg-succes" onclick=""></button>
-            <button class="btn border border-3 rounded-circle mx-3 p-5 bg-secondary" onclick=""></button>
+          <p class="mt-3 mt-lg-0 fw-bold">Free Area</p>
+          <div class="free-area row d-flex">
+            <div class="col-12 text-center fw-bold">
+              <p>Toggle Button - Change Background Color</p>
+            </div>
+            <div class="col-12">
+              <button
+                class="btn border border-3 rounded-circle m-2 p-4 bg-danger"
+                onclick="btnBg(this)"
+                id="dangerBg"
+              ></button>
+              <button
+                class="btn border border-3 rounded-circle m-2 p-4 bg-warning"
+                onclick="btnBg(this)"
+                id="warningBg"
+              ></button>
+              <button
+                class="btn border border-3 rounded-circle m-2 p-4 bg-info"
+                onclick="btnBg(this)"
+                id="infoBg"
+              ></button>
+              <button
+                class="btn border border-3 rounded-circle m-2 p-4 bg-dark"
+                onclick="btnBg(this)"
+                id="darkBg"
+              ></button>
+              <button
+                class="btn border border-3 rounded-circle m-2 p-4 bg-success"
+                onclick="btnBg(this)"
+                id="successBg"
+              ></button>
+              <button
+                class="btn border border-3 rounded-circle m-2 p-4 bg-secondary"
+                onclick="btnBg(this)"
+                id="secondaryBg"
+              ></button>
+            </div>
           </div>
         </div>
       </div>
@@ -403,4 +231,3 @@
     <script src="js/script.js"></script>
   </body>
 </html>
->>>>>>> 897cf32d8656f96400d2926c1b9832bbb46b249c

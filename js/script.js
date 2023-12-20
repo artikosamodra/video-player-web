@@ -45,10 +45,9 @@ function btnVid(button) {
 
   playerVid.load();
   playerVid.play();
-
-  // console.log(videoSrc);
 }
 
+// searchButton
 function searchBtn() {
   let searchTerm = document.getElementById("searchInput").value.toUpperCase();
   let videoButtons = document.querySelectorAll(".video-area button");
@@ -65,3 +64,50 @@ function searchBtn() {
     }
   });
 }
+
+//BG Body Themes
+
+// let dangerBg = document.getElementById("dangerBg");
+// let warningBg = document.getElementById("warningBg");
+// let primaryBg = document.getElementById("primaryBg");
+// let darkBg = document.getElementById("darkBg");
+// let successBg = document.getElementById("successBg");
+// let secondaryBg = document.getElementById("secondaryBg");
+
+function btnBg(button) {
+  // let body = document.body;
+
+  //get atribut background
+  let bgColBtn = button.getAttribute("id");
+
+  //Color background
+  let bgColor = {
+    dangerBg: "bg-danger",
+    warningBg: "bg-warning",
+    infoBg: "bg-info",
+    darkBg: "bg-dark",
+    successBg: "bg-success",
+    secondaryBg: "bg-secondary",
+  };
+
+  if (document.body.classList.contains(bgColor[bgColBtn])) {
+    // Remove the class if it's already present
+    document.body.classList.remove(bgColor[bgColBtn]);
+
+    // Check if it's dark mode, then set text color to white
+    if (bgColor[bgColBtn] === "bg-dark" || bgColor[bgColBtn] === "bg-danger" || bgColor[bgColBtn] === "bg-success" || bgColor[bgColBtn] === "bg-secondary") {
+      document.body.classList.remove("text-light");
+    }
+  } else {
+    // Add the class if it's not present
+    document.body.className = bgColor[bgColBtn];
+
+    // Check if it's dark mode, then set text color to white
+    if (bgColor[bgColBtn] === "bg-dark" || bgColor[bgColBtn] === "bg-danger" || bgColor[bgColBtn] === "bg-success" || bgColor[bgColBtn] === "bg-secondary") {
+      document.body.classList.add("text-light");
+    }
+  }
+}
+
+
+// bgColor[bgColBtn] === bg-danger || bgColor[bgColBtn] === bg-success || bgColor[bgColBtn] === bg-secondary 
